@@ -622,7 +622,8 @@ dependencies = [
 name = "parallel_computing"
 version = "0.1.0"
 dependencies = [
- "wasm-bindgen",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
@@ -648,13 +649,6 @@ name = "pkg-config"
 version = "0.3.32"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7edddbd0b52d732b21ad9a5fab5c704c14cd949e5e9a1ec5929a24fded1b904c"
-
-[[package]]
-name = "playground"
-version = "0.1.0"
-dependencies = [
- "playground-api",
-]
 
 [[package]]
 name = "playground-api"
@@ -920,6 +914,17 @@ name = "smallvec"
 version = "1.15.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "67b1b7a3b5fe4f1376887184045fcf45c69e92af734b7aaddc05fb777b6fbd03"
+
+[[package]]
+name = "snippets"
+version = "0.1.0"
+dependencies = [
+ "js-sys",
+ "playground-api",
+ "serde_json",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+]
 
 [[package]]
 name = "socket2"

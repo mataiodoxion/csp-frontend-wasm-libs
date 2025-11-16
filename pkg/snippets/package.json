@@ -1,0 +1,15 @@
+{
+  "name": "snippets",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "snippets_bg.wasm",
+    "snippets.js",
+    "snippets.d.ts"
+  ],
+  "main": "snippets.js",
+  "types": "snippets.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
