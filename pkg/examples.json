@@ -1,6 +1,6 @@
 [
   {
     "name": "threads_ex",
-    "code": "use std::thread;\nuse std::time::Duration;\n\npub fn threads_ex() {\n    thread::spawn(|| {\n        for i in 1..10 {\n            println!(\"hi number {i} from the spawned thread!\");\n            thread::sleep(Duration::from_millis(1));\n        }\n    });\n\n    for i in 1..5 {\n        println!(\"hi number {i} from the main thread!\");\n        thread::sleep(Duration::from_millis(1));\n    }\n}\n"
+    "code": "use std::thread;\nuse std::time::Duration;\n\nfn main() {\n    thread::spawn(|| {\n        for i in 1..10 {\n            println!(\"hi number {i} from the spawned thread!\");\n            thread::sleep(Duration::from_millis(1));\n        }\n    });\n\n    for i in 1..5 {\n        println!(\"hi number {i} from the main thread!\");\n        thread::sleep(Duration::from_millis(1));\n    }\n}\n"
   }
 ]
